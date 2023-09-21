@@ -12,7 +12,9 @@ Crea un entorno local o dónde tú prefieras, puedes usar Docker, Vagrant o lo q
 
 A partir de aquí deberas instalar un Wordpress en el directorio **www** del proyecto e inicializarlo, una vez este inicializado crear un Theme Child a partir de cualquiera de los temas por defecto que trae Wordpress y empezar el desarrollo.
 
-El tema deberá tener estilos/scripts propios y ser responsive, puedes coger cualquier web de referencia para establecer estos estilos y/o funcionalidades. 
+El tema deberá tener estilos/scripts propios y ser responsive, puedes coger cualquier web de referencia para establecer estos estilos y/o funcionalidades. Adjuntamos un enlance de una web de referencia por si puede servirte de ayuda, siente libre en crear lo que quieras:
+
+> https://magazine.deporvillage.com/
 
 Todos los assets, a excepción de las imágenes han de estar compilados y minimizados en el tema, utilizando pre-procesadores tanto en JS como en CSS. Si ves conveniente utilizar alguna librería externa para la generación del grid, utilízala sin problema.
 

@@ -8,7 +8,7 @@ El objetivo principal de esta prueba es montar un pequeño site que conste de un
 
 ## Especificaciones
 
-Para ello cuentas con un docker que tan solo hace falta levantarlo, el cual consta de Apache 2.4, MYSQL 5.7 y PhpMyAdmin.
+Crea un entorno local o dónde tú prefieras, puedes usar Docker, Vagrant o lo que más te convenga.
 
 A partir de aquí deberas instalar un Wordpress en el directorio **www** del proyecto e inicializarlo, una vez este inicializado crear un Theme Child a partir de cualquiera de los temas por defecto que trae Wordpress y empezar el desarrollo.
 
@@ -18,29 +18,6 @@ Todos los assets, a excepción de las imágenes han de estar compilados y minimi
 
 ## Instalación
 
-### Opcional
-
-Si prefieres que responda el Wordpress en un dominio especifico necesitarás editar los hosts de tu maquina apuntando a **127.0.0.1**
-
-[Cómo editar los hosts](https://support.hawkhost.com/Knowledgebase/Article/View/how-to-edit-your-hosts-file-on-windows-mac-or-linux)
-
-Y si quieres que el proyecto responda por https, deberás generar los certificados en la carpeta **bin/apache**, un ejemplo seria utilizando mkcert para ello, ademas deberás habilitar en **config/vhosts/default.conf** el puerto 443;
-
-```bash
-mkcert {{nombre de tu dominio local}}
-```
-
-### Pasos a seguir
-Para la creación de los contenedores, dirígete a la raiz del proyecto y ejecuta el siguiente comando desde la terminal:
-
-```bash
-chmod +x setup.sh && ./setup.sh 
-```
-En el caso de que tengas problemas con la creación o inicialización de los contenedores, en el archivo **.env** está la configuración de los puertos, credenciales y nomenclatura de los contenedores. Para aplicar esta nueva configuración tendrás que parar los contenedores y volver a montar el webserver.
-
-```bash
-docker-compose stop && docker-compose up -d --build
-```
 
 ## ¿Qué nos gustaría ver?
 
